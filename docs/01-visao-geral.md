@@ -4,7 +4,10 @@
 
 ---
 
-## Objetivo
+> [!NOTE]
+> Este documento descreve a **fase preliminar** do projeto, que é a implementada no código de [`codigo/`](../codigo/): YOLOv8m vs YOLOv10m com as 10 classes originais do BDD100K. A versão final do trabalho ampliou o escopo: módulo de faixa (Canny + Hough), quatro arquiteturas (YOLOv8m, YOLOv10m, YOLOv11m e YOLO26) e classes em português com o semáforo separado por cor. Veja o [artigo SICFEI](08-artigo-sicfei.md).
+
+## Objetivo (fase preliminar)
 
 Comparar, nas mesmas condições de treino, dois detectores de objetos da família YOLO aplicados a cenas de trânsito:
 

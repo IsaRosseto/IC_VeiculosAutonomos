@@ -53,6 +53,8 @@ O `results.csv` tem 13 épocas, mAP50 ≈ 0,16 e recall ≈ 0,003, o que indica 
 
 Análise completa em [resultados/README.md](../resultados/README.md).
 
+> Esses registros são das primeiras execuções. Os treinos finais do projeto, com o dataset completo, estão no [artigo SICFEI](08-artigo-sicfei.md) e não têm esse problema. Os problemas de código desta lista continuam valendo para o código de `codigo/`.
+
 ### 4. `total_mem`
 
 O atributo de `torch.cuda.get_device_properties()` se chama `total_memory`. Do jeito que está, `scripts/train_yolo.py` dá `AttributeError` assim que encontra uma GPU. O `train.py` já usa o nome certo.
@@ -105,7 +107,8 @@ Resolvido com o `README.md` da raiz e a pasta `docs/`. Falta manter a documenta�
 
 | Data | Problema | O que mudou | Commit |
 |---|---|---|---|
-| 2026-10 | 14 | Repositório organizado: código em `codigo/`, documentação em `docs/`, resultados em `resultados/` | — |
+| 2026-10 | 14 | Repositório organizado: código em `codigo/`, documentação em `docs/`, resultados em `resultados/` | #2 |
+| 2026-10 | — | README atualizado com o artigo SICFEI (resultados finais) em `docs/08-artigo-sicfei.md` | — |
 
 ---
 

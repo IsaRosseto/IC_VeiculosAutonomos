@@ -1,6 +1,6 @@
 # 7. Glossário
 
-[← Prompts de correção](06-prompts-de-correcao.md) · [Índice](../README.md)
+[← Prompts de correção](06-prompts-de-correcao.md) · [Índice](../README.md) · [Próximo: Artigo SICFEI →](08-artigo-sicfei.md)
 
 ---
 
@@ -15,6 +15,8 @@ Termos usados no projeto, em ordem alfabética.
 | **`best.pt`** | Checkpoint da época com o melhor *fitness* na validação (no Ultralytics, 0,1·mAP50 + 0,9·mAP50-95) |
 | **Bounding box (bbox)** | Retângulo que delimita um objeto na imagem |
 | **Cache** | Guardar as imagens já decodificadas na RAM (`"ram"`) ou em disco (`"disk"`) para não ler o `.jpg` de novo em cada época |
+| **C2PSA** | Bloco de atenção espacial introduzido no YOLOv11 |
+| **Canny** | Algoritmo clássico de detecção de bordas, usado no módulo de faixa |
 | **Checkpoint** | Arquivo `.pt` com os pesos do modelo e o estado do treino, usado para continuar depois |
 | **COCO** | Dataset genérico de 80 classes em que os pesos `yolov8m.pt` e `yolov10m.pt` foram pré-treinados |
 | **`coco8.yaml`** | Mini-dataset de demonstração do Ultralytics (8 imagens). Aparecer no treino indica erro de configuração |
@@ -24,7 +26,9 @@ Termos usados no projeto, em ordem alfabética.
 | **CUDA** | Plataforma da NVIDIA que permite ao PyTorch usar a GPU |
 | **`data.yaml`** | Arquivo que diz ao Ultralytics onde estão as imagens e os labels e quais são as classes |
 | **Época (*epoch*)** | Uma passada completa por todas as imagens de treino |
+| **Média macro × micro** | Macro: média simples entre classes (todas pesam igual). Micro/global: ponderada pelo número de anotações de cada classe |
 | **Fine-tuning** | Partir de pesos pré-treinados (COCO) e continuar o treino em outro dataset (BDD100K) |
+| **Hough (Transformada de)** | Técnica que encontra retas numa imagem de bordas; usada para achar as linhas da faixa |
 | **IoU** (*Intersection over Union*) | Área da interseção dividida pela área da união entre a caixa prevista e a real. 1 = sobreposição perfeita |
 | **Junction** | Tipo de link de pasta do Windows que não exige permissão de administrador |
 | **`last.pt`** | Checkpoint da última época concluída. Usado no *resume* |
@@ -36,16 +40,21 @@ Termos usados no projeto, em ordem alfabética.
 | **`patience`** | Número de épocas sem melhora antes de parar o treino (*early stopping*). `0` desativa |
 | **Precision (precisão)** | Verdadeiros positivos ÷ todas as detecções. "Das caixas que o modelo desenhou, quantas estavam certas?" |
 | **Recall (revocação)** | Verdadeiros positivos ÷ todos os objetos reais. "Dos objetos que existiam, quantos o modelo achou?" |
+| **RoboRacer** | Plataforma de veículo autônomo em escala reduzida (derivada da F1TENTH), alvo deste projeto |
 | **Resume** | Continuar um treino interrompido a partir do `last.pt` |
+| **SGD** | *Stochastic Gradient Descent*, otimizador usado nos treinos finais |
 | **Run** | Uma execução de treino, com sua pasta em `runs/detect/<nome>/` |
+| **Semente (*seed*)** | Número que fixa a aleatoriedade do treino; repetir com sementes diferentes mostra a variação natural dos resultados |
 | **Symlink** | Link simbólico: um "atalho" de pasta que aponta para outro lugar sem copiar os arquivos |
 | **VRAM** | Memória da placa de vídeo. Limita o batch e o tamanho da imagem |
 | **WandB** (*Weights & Biases*) | Serviço online para acompanhar gráficos de treino |
 | **`weights_only`** | Parâmetro do `torch.load` que impede um `.pt` de executar código ao ser carregado |
 | **Workers** | Processos paralelos que leem e preparam as imagens enquanto a GPU treina |
 | **YOLO** (*You Only Look Once*) | Família de detectores de objetos em um único estágio, rápidos o bastante para tempo real |
+| **YOLOv11** | Versão da Ultralytics (2024) com o bloco de atenção C2PSA |
+| **YOLO26** | Versão mais recente da Ultralytics (2026), com inferência ponta a ponta e foco em dispositivos de borda |
 | **Formato YOLO** | Um `.txt` por imagem, uma linha por objeto: `classe x_centro y_centro largura altura`, tudo normalizado entre 0 e 1 |
 
 ---
 
-[← Prompts de correção](06-prompts-de-correcao.md) · [Índice](../README.md)
+[← Prompts de correção](06-prompts-de-correcao.md) · [Índice](../README.md) · [Próximo: Artigo SICFEI →](08-artigo-sicfei.md)
