@@ -14,7 +14,9 @@
 | RAM | 16 GB | Com `cache="ram"` fixo no código, o dataset completo pede ~48 GB. Veja o [problema 5](05-problemas-conhecidos.md#5-cache-em-ram) |
 | Disco | ~25 GB livres | ~10 GB do dataset + labels convertidos + pesos e checkpoints |
 
-Referência das execuções anteriores: com batch 4 e só 1.160 imagens de treino, cada época levou cerca de **55 minutos**.
+Configuração usada nos treinos finais do [artigo](08-artigo-sicfei.md): **GPU NVIDIA RTX 4060, Intel Core i7 de 13ª geração (série U) e 16 GB de RAM**, batch 16, com 20h34min a 23h24min de treino por modelo (100 épocas, BDD100K completo).
+
+Referência das primeiras execuções: com batch 4 e só 1.160 imagens de treino, cada época levou cerca de **55 minutos**.
 
 ### Software
 

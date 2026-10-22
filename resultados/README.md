@@ -2,6 +2,9 @@
 
 [← Índice do repositório](../README.md)
 
+> [!IMPORTANT]
+> **Os resultados finais do projeto estão no [artigo SICFEI](../docs/08-artigo-sicfei.md)** (4 arquiteturas, BDD100K completo; melhor mAP50: YOLOv11m com 0,578). Esta pasta guarda só as primeiras execuções, de abril de 2026.
+
 > [!WARNING]
 > **Nenhum resultado desta pasta é válido para a pesquisa.** O treino usou só 1,6% das imagens de treino, parou na época 13 de 100 e o YOLOv10m nunca foi treinado. Estes arquivos são mantidos como registro histórico e para diagnóstico. Detalhes nos [problemas 2 e 3](../docs/05-problemas-conhecidos.md#2-dataset-incompleto).
 
@@ -104,7 +107,7 @@ Exemplo — [`compare_011_bf054de4-025bb1c3.jpg`](anteriores/comparacoes/2026040
 
 ### O que esperar de um treino saudável
 
-Antes de comparar com a literatura, confira números publicados para YOLOv8/YOLOv10 no BDD100K com o dataset completo. Como regra prática: recall abaixo de 0,1 depois de várias épocas indica erro de dados ou de configuração, não falta de treino. Por isso o [prompt 3](../docs/06-prompts-de-correcao.md#prompt-3--resultados-inválidos-re-treino-controlado-e-sanity-check) propõe um modo `--sanity` que verifica isso em poucas épocas.
+Nos treinos finais do [artigo](../docs/08-artigo-sicfei.md), com o BDD100K completo e 100 épocas, o YOLOv8m chegou a **mAP50 0,556 e recall 0,502**, contra 0,17 e 0,003 aqui. Como regra prática: recall abaixo de 0,1 depois de várias épocas indica erro de dados ou de configuração, não falta de treino. Por isso o [prompt 3](../docs/06-prompts-de-correcao.md#prompt-3--resultados-inválidos-re-treino-controlado-e-sanity-check) propõe um modo `--sanity` que verifica isso em poucas épocas.
 
 ---
 

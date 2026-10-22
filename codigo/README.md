@@ -2,6 +2,8 @@
 
 [← Índice do repositório](../README.md)
 
+Código da **fase preliminar** do projeto (YOLOv8m vs YOLOv10m, 10 classes originais do BDD100K). O código dos treinos finais do [artigo](../docs/08-artigo-sicfei.md) (YOLOv11m, YOLO26, classes em português) e o do módulo de faixa ainda não estão aqui.
+
 Esta pasta era chamada `IA-teste-main/` na versão original. Todos os comandos abaixo devem ser executados **de dentro desta pasta**.
 
 ```
