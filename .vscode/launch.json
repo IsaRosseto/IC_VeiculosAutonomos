@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Train BDD100K",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/codigo/train.py",
+            "args": [
+                "--source", "${workspaceFolder}/codigo",
+                "--batch", "4"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/codigo",
+            "python": "${workspaceFolder}/.venv/bin/python3"
+        }
+    ]
+}
