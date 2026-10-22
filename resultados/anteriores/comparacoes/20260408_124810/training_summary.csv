@@ -1,0 +1,3 @@
+Model,Status,Time,mAP50,mAP50-95,Precision,Recall
+YOLOv8m,skipped,,,,,
+YOLOv10m,skipped,,,,,

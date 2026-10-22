@@ -1,0 +1,19 @@
+# Ambiente Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Dataset BDD100K (~10 GB) e dataset convertido (gerado pelo pipeline)
+codigo/bdd100k/
+codigo/data/
+
+# Saídas geradas pelo pipeline (pesos, logs de treino, comparações)
+codigo/runs/
+codigo/results/
+codigo/wandb/
+*.pt
+
+# Sistema / editores
+.DS_Store
+Thumbs.db

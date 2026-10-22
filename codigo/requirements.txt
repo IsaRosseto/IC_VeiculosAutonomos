@@ -1,0 +1,27 @@
+# ============================================================
+# Pipeline Comparativo YOLOv8m vs YOLOv10m — BDD100K
+# Testado em Python 3.10+ / Windows / CUDA 12.x
+# ============================================================
+
+# --- Core Deep Learning ---
+torch>=2.1.0
+torchvision>=0.16.0
+
+# --- Ultralytics (YOLOv8 + YOLOv10) ---
+ultralytics>=8.3.0
+
+# --- Monitoramento ---
+wandb>=0.18.0
+
+# --- Visão / Processamento ---
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# --- Visualização ---
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# --- Utilitários ---
+numpy>=1.24.0
+tqdm>=4.66.0
+huggingface_hub>=0.20.0
