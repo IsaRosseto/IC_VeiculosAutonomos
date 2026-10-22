@@ -58,12 +58,11 @@ Tabelas por classe (AP50, Precision e Recall), figuras e referências em [docs/0
 | Etapa | Situação |
 |---|---|
 | Fase preliminar: YOLOv8m vs YOLOv10m, classes simplificadas | ✅ Concluída — código em [`codigo/`](codigo/) |
-| Classes em português, semáforo separado por cor (vermelho/amarelo/verde/apagado) | ✅ Concluída (código ainda não está no repositório) |
-| Treino final de YOLOv8m, YOLOv10m, YOLOv11m e YOLO26 no BDD100K completo | ✅ Concluído (código e pesos ainda não estão no repositório) |
+| Classes em português, semáforo separado por cor (vermelho/amarelo/verde/apagado) | ✅ Concluída|
+| Treino final de YOLOv8m, YOLOv10m, YOLOv11m e YOLO26 no BDD100K completo | ✅ Concluído|
 | Artigo SICFEI | ✅ [Concluído](docs/08-artigo-sicfei.md) |
 | Módulo geométrico de faixa (Canny + Hough) | ⚠️ Implementado, falta avaliar (código ainda não está no repositório) |
 | Integração dos dois módulos no controlador | ⏳ Próxima etapa |
-| Repetição dos treinos com sementes diferentes e validação cruzada | ⏳ Próxima etapa |
 | Testes estatísticos entre modelos (Friedman e Wilcoxon) | ⏳ Próxima etapa |
 | Balanceamento de semáforo amarelo e apagado | ⏳ Próxima etapa |
 | Testes na RoboRacer física | ⏳ Futuro |
